@@ -14,8 +14,8 @@ export default (req, res) => {
 
     return res.json({
       version: latestVersion,
-      // package: `http://localhost:3000/plugins/${plugin}/${latestVersion}`
-      package: `https://node-rn.vercel.app/api/resource-navigator`
+      package: `http://localhost:3000/plugins/${plugin}/${latestVersion}`
+      // package: `https://node-rn.vercel.app/api/resource-navigator`
     })
   } catch (e) {
     return res.status(404).json({
