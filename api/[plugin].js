@@ -14,8 +14,8 @@ export default (req, res) => {
 
     return res.json({
       version: latestVersion,
-      // package: `http://localhost:3000/plugins/${plugin}/${latestVersion}`
-      package: `https://node-rn.vercel.app/plugins/${plugin}/${latestVersion}`
+      package: `http://localhost:3000/plugins/${plugin}/${latestVersion}`
+      // package: `https://node-rn.vercel.app/plugins/${plugin}/${latestVersion}`
     })
   } catch (e) {
     return res.status(404).json({
